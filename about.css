@@ -1,0 +1,625 @@
+
+/*  CSS add from servive section */
+
+.service-section {
+
+  background-color: #f8e8da;
+
+  padding: 50px 60px;
+
+}
+
+.service-heading {
+
+  text-transform: uppercase;
+
+  font-size: 20px;
+
+  font-size: Montserrat;
+
+}
+
+#service-area {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+}
+
+.service-exp {
+
+  text-transform: uppercase;
+
+  text-align: center;
+
+  font-size: 55px;
+
+  font-family: Noto Serif, Regular;
+
+  color: #1b1b1b;
+
+}
+
+.service-btn {
+
+  text-transform: uppercase;
+
+  font-size: 18px;
+
+  font-family: Montserrat;
+
+  font-weight: bold;
+
+  text-decoration: none;
+
+  padding: 10px 20px;
+
+}
+
+.service-btn.bg {
+
+  background-color: #800000;
+
+  border: 2px solid #800000;
+
+  color: #ffffff;
+
+}
+
+.service-btn.hollow {
+
+  color: #800000;
+
+  background-color: #ffffff;
+
+  border: 2px solid #800000;
+
+}
+
+
+
+/*start css for service card section */
+
+.service-container {
+
+  background-color: #f8e8da;
+
+}
+
+
+
+.card-heading {
+
+  text-transform: uppercase;
+
+  font-size: 20px;
+
+  font-family: Noto Serif, Bold;
+
+  color: #1b1b1b;
+
+}
+
+
+
+.card-items {
+
+  border: 2px solid #d5c4b5;
+
+  position: relative;
+
+  padding: 10px 10px 30px;
+
+  background-color: #ffffff;
+
+}
+
+.card-items::after {
+
+  position: absolute;
+
+  content: "\3e";
+
+  bottom: -4%;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background-color: #800000;
+
+  color: #fff;
+
+  font-size: 26px;
+
+  width: 45px;
+
+  height: 45px;
+
+  border-radius: 50%;
+
+}
+
+.card-image {
+
+  position: relative;
+
+}
+
+.card-icons {
+
+  background-color: #fff;
+
+  border-radius: 50%;
+
+  width: 70px;
+
+  height: 70px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  margin-top: -40px;
+
+  position: relative;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  box-shadow: 1px 1px 10px #cccccc9c;
+
+}
+
+.card-icons img {
+
+  width: 45px;
+
+}
+
+.card-content {
+
+  color: #1b1b1b;
+
+  font-family: Montserrat;
+
+  font-weight: 500;
+
+  font-size: 14px;
+
+}
+
+
+
+/* Card CSS end */
+
+
+
+/* Experience section start */
+
+.experience-section {
+
+  position: relative;
+
+}
+
+.bg-img {
+
+  background-image: url("images/bg-img-exp.jpg");
+
+  /* background-size: cover; */
+
+  height: 500px;
+
+  padding: 80px;
+
+}
+
+.secondary-heading,
+
+.main-heading {
+
+  text-align: center;
+
+  color: #ffffff;
+
+  font-family: Montserrat;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+}
+
+.secondary-heading {
+
+  font-size: 18px;
+
+}
+
+.main-heading {
+
+  font-size: 50px;
+
+  font-family: Noto Serif;
+
+  font-weight: 400;
+
+}
+
+
+
+.inner-container {
+
+  position: relative;
+
+  height: 500px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  padding: 60px;
+
+  top: 70px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+.exp-depart {
+
+  color: #656464;
+
+  font-size: 14px;
+
+  font-family: Montserrat;
+
+  font-weight: 600;
+
+  margin-bottom: 0;
+
+}
+
+
+
+.exp-head {
+
+  font-size: 20px;
+
+  font-family: Montserrat;
+
+  font-weight: 700;
+
+}
+
+.inner-container .exp-depart::after {
+
+  content: "";
+
+  position: absolute;
+
+  bottom: 244px;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 5px;
+
+  background-color: #d9b99b;
+
+}
+
+
+
+.first-division.row.text-start {
+
+  margin-bottom: 110px;
+
+}
+
+
+
+.exp-detail-first {
+
+  position: relative;
+
+  padding: 5px 50px 5px 0;
+
+  color: #ffffff;
+
+  background-color: #800000;
+
+  display: inline-block;
+
+}
+
+
+
+.exp-detail-first::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 2px;
+
+  left: -32px;
+
+  width: 0;
+
+  height: 0;
+
+  border-style: solid;
+
+  border-width: 0px 19px 30px 16px;
+
+  border-color: transparent transparent #800000 transparent;
+
+  transform: rotate(-90deg);
+
+}
+
+.exp-detail-second {
+
+  position: relative;
+
+  padding: 5px 50px 5px 0;
+
+  color: #ffffff;
+
+  background-color: #800000;
+
+  display: inline-block;
+
+  margin-top: 20px;
+
+  text-align: left;
+
+}
+
+
+
+.exp-detail-second::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 2px;
+
+  left: -32px;
+
+  width: 0;
+
+  height: 0;
+
+  border-style: solid;
+
+  border-width: 0px 19px 30px 16px;
+
+  border-color: transparent transparent #800000 transparent;
+
+  transform: rotate(-90deg);
+
+}
+
+
+
+.first-inner-devision {
+
+  position: relative;
+
+}
+
+
+
+.first-inner-devision::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 19px;
+
+  left: -17px;
+
+  height: 100%;
+
+  width: 1px;
+
+  background-color: #989898;
+
+}
+
+
+
+.second-inner-devision.col-md-4 {
+
+  text-align: left;
+
+  padding-left: 145px;
+
+}
+
+
+
+/* .second-inner-devision {
+
+  position: relative;
+
+}
+
+
+
+.second-inner-devision::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: -53px;
+
+  left: 115px;
+
+  height: 100%;
+
+  width: 1px;
+
+  background-color: #989898;
+
+} */
+
+/* Experience section end */
+
+
+
+/* Reward section start */
+
+
+
+.reward-area {
+
+  margin-top: 250px;
+
+}
+
+/* Reward section end */
+
+
+
+/* RECOGNITIONS CSS Start  */
+
+
+
+.reward {
+
+  color: #1b1b1b !important;
+
+}
+
+.reward-area {
+
+  background-color: #ffffff;
+
+  padding: 80px;
+
+}
+
+.reward-det {
+
+  text-align: left;
+
+  border-left: 1px solid #dfdcdc;
+
+  position: relative;
+
+}
+
+.reward-det::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 5px;
+
+  height: 41px;
+
+  background-color: #800000;
+
+  top: 0px;
+
+  left: -2px;
+
+}
+
+.reward-det-head {
+
+  font-size: 16px;
+
+  font-family: Montserrat;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+
+}
+
+.reward-det-pera {
+
+  font-size: 14px;
+
+  font-family: Montserrat;
+
+  font-weight: 400;
+
+  color: #6b6a6a;
+
+}
+
+.reward-details-card .reward-det-head,
+
+.reward-details-card .reward-det-pera {
+
+  text-align: left;
+
+}
+
+
+
+.row.reward-details-card + .row.reward-details-card::before {
+
+  content: "";
+
+  display: block;
+
+  width: 100%;
+
+  height: 1px;
+
+  background-color: #ccc;
+
+  margin: 20px 0;
+
+}
+
+#rew-detail-main {
+
+  margin-top: 40px;
+
+}
+
+
+
+/* RECOGNITIONS CSS End  */
+
+
+
+/* Membership section start */
+
+.member-section {
+
+  background-color: #ECECEC;
+
+}
+

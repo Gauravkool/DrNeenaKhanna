@@ -1,0 +1,893 @@
+/* Header CSS Start */
+
+.header {
+  margin-top: 20px;
+  height: 16vh;
+}
+
+.header .nav-tab a {
+  text-decoration: none;
+}
+
+.header .nav-tab a {
+  color: #1b1b1b;
+}
+
+.header .nav-tab .nav-btn {
+  background-color: #800000;
+  padding: 10px 20px;
+  color: #ffffff;
+}
+
+.header .nav-tab a:hover {
+  border-bottom: 2px solid #800000;
+  padding-bottom: 35px;
+  /* transition: 0.5s ease; */
+}
+
+.header .nav-tab a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px; /* Adjust the space below the border */
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s ease; /* Add transition for smooth effect */
+}
+
+html,
+body {
+  /* margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* h1 {
+  margin: 20px 0;
+  color: #fff;
+}
+
+.center {
+  text-align: center;
+} */
+
+.header .nav-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  height: 80px;
+  border-radius: 0 0 15px 15px;
+  padding: 0 25px;
+  z-index: 2;
+  background: #fff;
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+}
+
+.nav-tabs {
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  list-style: none;
+}
+
+.nav-tab:not(:last-child) {
+  padding: 10px 20px;
+  margin: 0;
+  /* border-right: 1px solid #eee; */
+}
+
+.nav-tab:last-child {
+  padding: 10px 0 0 25px;
+}
+
+.nav-tab,
+.menu-btn {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header .nav-container {
+    position: fixed;
+    display: none;
+    overflow-y: auto;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -1px 0 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .header .nav-tabs {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .header .nav-tab a {
+    text-decoration: none;
+  }
+
+  .header .nav-tab:not(:last-child) {
+    padding: 20px 25px;
+    margin: 0;
+    border-right: unset;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  .header .nav-tab:last-child {
+    padding: 15px 25px;
+  }
+
+  .header .menu-btn {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    /* border-radius: 10px; */
+  }
+
+  .header .menu-btn .menu {
+    display: block;
+    width: 100%;
+    height: 2px;
+    /* border-radius: 2px; */
+    background: #111;
+  }
+
+  .header .menu-btn .menu:nth-child(2) {
+    margin-top: 4px;
+    opacity: 1;
+  }
+
+  .header .menu-btn .menu:nth-child(3) {
+    margin-top: 4px;
+  }
+
+  .header #menuToggle:checked + .menu-btn .menu {
+    transition: transform 0.2s ease;
+  }
+
+  .header #menuToggle:checked + .menu-btn .menu:nth-child(1) {
+    transform: translate3d(0, 6px, 0) rotate(45deg);
+  }
+
+  .header #menuToggle:checked + .menu-btn .menu:nth-child(2) {
+    transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+    opacity: 0;
+  }
+
+  .header #menuToggle:checked + .menu-btn .menu:nth-child(3) {
+    transform: translate3d(0, -6px, 0) rotate(-45deg);
+  }
+
+  .header #menuToggle:checked ~ .nav-container {
+    z-index: 1;
+    display: flex;
+    animation: menu-slide-left 0.3s ease;
+  }
+
+  @keyframes menu-slide-left {
+    0% {
+      transform: translateX(200px);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+/* Header CSS end */
+
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* Style for the banner container */
+
+.banner-container {
+  position: relative;
+
+  overflow: hidden; /* Hide overflow to prevent horizontal scroll */
+}
+
+/* Style for the banner image */
+
+.banner-image {
+  width: 100%;
+
+  height: 720px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* Style for the banner content */
+
+.banner-content {
+  position: absolute;
+
+  top: 50%;
+
+  left: 30%;
+
+  transform: translate(-50%, -50%);
+
+  text-align: start;
+
+  color: #fff;
+}
+
+.banner-content .heading {
+  font-family: "Noto Serif", serif;
+
+  color: #1b1b1b;
+
+  font-size: 70px;
+
+  margin-bottom: 20px;
+}
+
+.banner-content p {
+  font-size: 18px;
+
+  font-family: Montserrat;
+
+  margin-bottom: 30px;
+
+  color: #1b1b1b;
+}
+
+.banner-content span {
+  color: #800000;
+
+  text-transform: uppercase;
+
+  font-weight: 900;
+}
+
+/* About section CSS Start*/
+
+.about-section,
+h4 {
+  text-align: center;
+
+  font-size: 20px;
+}
+
+.montserrat {
+  font-family: Montserrat;
+
+  font-size: 16px;
+}
+
+.montserrat.about {
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.noto-font {
+  font-size: 55px;
+
+  font-family: Noto Serif, Regular;
+
+  text-align: center;
+}
+
+.about_images img {
+  width: 550px;
+
+  height: 440px;
+}
+
+/* About section CSS end */
+
+/*  CSS add from servive section */
+
+.service-section {
+  background-color: #f8e8da;
+
+  padding: 50px 60px;
+}
+
+.service-heading {
+  text-transform: uppercase;
+
+  font-size: 20px;
+
+  font-size: Montserrat;
+}
+
+#service-area {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.service-exp {
+  text-transform: uppercase;
+
+  text-align: center;
+
+  font-size: 55px;
+
+  font-family: Noto Serif, Regular;
+
+  color: #1b1b1b;
+}
+
+.service-btn {
+  text-transform: uppercase;
+
+  font-size: 18px;
+
+  font-family: Montserrat;
+
+  font-weight: bold;
+
+  text-decoration: none;
+
+  padding: 10px 20px;
+}
+
+.service-btn.bg {
+  background-color: #800000;
+
+  border: 2px solid #800000;
+
+  color: #ffffff;
+}
+
+.service-btn.hollow {
+  color: #800000;
+
+  background-color: #ffffff;
+
+  border: 2px solid #800000;
+}
+
+/*start css for service card section */
+
+.service-container {
+  background-color: #f8e8da;
+}
+
+.card-heading {
+  text-transform: uppercase;
+
+  font-size: 20px;
+
+  font-family: Noto Serif, Bold;
+
+  color: #1b1b1b;
+}
+
+.card-items {
+  border: 2px solid #d5c4b5;
+
+  position: relative;
+
+  padding: 10px 10px 30px;
+
+  background-color: #ffffff;
+}
+
+.card-items::after {
+  position: absolute;
+
+  content: "\3e";
+
+  bottom: -4%;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background-color: #800000;
+
+  color: #fff;
+
+  font-size: 26px;
+
+  width: 45px;
+
+  height: 45px;
+
+  border-radius: 50%;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-icons {
+  background-color: #fff;
+
+  border-radius: 50%;
+
+  width: 70px;
+
+  height: 70px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  margin-top: -40px;
+
+  position: relative;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  box-shadow: 1px 1px 10px #cccccc9c;
+}
+
+.card-icons img {
+  width: 45px;
+}
+
+.card-content {
+  color: #1b1b1b;
+
+  font-family: Montserrat;
+
+  font-weight: 500;
+
+  font-size: 14px;
+}
+
+/* Card CSS end */
+
+/* Experience section start */
+
+.experience-section {
+  position: relative;
+}
+
+.bg-img {
+  background-image: url("images/bg-img-exp.jpg");
+
+  /* background-size: cover; */
+
+  height: 500px;
+
+  padding: 80px;
+}
+
+.secondary-heading,
+.main-heading {
+  text-align: center;
+
+  color: #ffffff;
+
+  font-family: Montserrat;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+.secondary-heading {
+  font-size: 18px;
+}
+
+.main-heading {
+  font-size: 50px;
+
+  font-family: Noto Serif;
+
+  font-weight: 400;
+}
+
+.inner-container {
+  position: relative;
+
+  height: 500px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  padding: 60px;
+
+  top: 70px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.exp-depart {
+  color: #656464;
+
+  font-size: 14px;
+
+  font-family: Montserrat;
+
+  font-weight: 600;
+
+  margin-bottom: 0;
+}
+
+.exp-head {
+  font-size: 20px;
+
+  font-family: Montserrat;
+
+  font-weight: 700;
+}
+
+.inner-container .exp-depart::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 244px;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 5px;
+
+  background-color: #d9b99b;
+}
+
+.first-division.row.text-start {
+  margin-bottom: 110px;
+}
+
+.exp-detail-first {
+  position: relative;
+
+  padding: 5px 50px 5px 0;
+
+  color: #ffffff;
+
+  background-color: #800000;
+
+  display: inline-block;
+}
+
+.exp-detail-first::before {
+  content: "";
+
+  position: absolute;
+
+  top: 2px;
+
+  left: -32px;
+
+  width: 0;
+
+  height: 0;
+
+  border-style: solid;
+
+  border-width: 0px 19px 30px 16px;
+
+  border-color: transparent transparent #800000 transparent;
+
+  transform: rotate(-90deg);
+}
+
+.exp-detail-second {
+  position: relative;
+
+  padding: 5px 50px 5px 0;
+
+  color: #ffffff;
+
+  background-color: #800000;
+
+  display: inline-block;
+
+  margin-top: 20px;
+
+  text-align: left;
+}
+
+.exp-detail-second::before {
+  content: "";
+
+  position: absolute;
+
+  top: 2px;
+
+  left: -32px;
+
+  width: 0;
+
+  height: 0;
+
+  border-style: solid;
+
+  border-width: 0px 19px 30px 16px;
+
+  border-color: transparent transparent #800000 transparent;
+
+  transform: rotate(-90deg);
+}
+
+.first-inner-devision {
+  position: relative;
+}
+
+.first-inner-devision::before {
+  content: "";
+
+  position: absolute;
+
+  top: 19px;
+
+  left: -17px;
+
+  height: 100%;
+
+  width: 1px;
+
+  background-color: #989898;
+}
+
+.second-inner-devision.col-md-4 {
+  text-align: left;
+
+  padding-left: 145px;
+}
+
+/* .second-inner-devision {
+
+  position: relative;
+
+}
+
+
+
+.second-inner-devision::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: -53px;
+
+  left: 115px;
+
+  height: 100%;
+
+  width: 1px;
+
+  background-color: #989898;
+
+} */
+
+/* Experience section end */
+
+/* Reward section start */
+
+.reward-area {
+  margin-top: 250px;
+}
+
+/* Reward section end */
+
+/* RECOGNITIONS CSS Start  */
+
+.reward {
+  color: #1b1b1b !important;
+}
+
+.reward-area {
+  background-color: #ffffff;
+
+  padding: 80px;
+}
+
+.reward-det {
+  text-align: left;
+
+  border-left: 1px solid #dfdcdc;
+
+  position: relative;
+}
+
+.reward-det::before {
+  content: "";
+
+  position: absolute;
+
+  width: 5px;
+
+  height: 41px;
+
+  background-color: #800000;
+
+  top: 0px;
+
+  left: -2px;
+}
+
+.reward-det-head {
+  font-size: 16px;
+
+  font-family: Montserrat;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  color: #1b1b1b;
+}
+
+.reward-det-pera {
+  font-size: 14px;
+
+  font-family: Montserrat;
+
+  font-weight: 400;
+
+  color: #6b6a6a;
+}
+
+.reward-details-card .reward-det-head,
+.reward-details-card .reward-det-pera {
+  text-align: left;
+}
+
+.row.reward-details-card + .row.reward-details-card::before {
+  content: "";
+
+  display: block;
+
+  width: 100%;
+
+  height: 1px;
+
+  background-color: #ccc;
+
+  margin: 20px 0;
+}
+
+#rew-detail-main {
+  margin-top: 40px;
+}
+
+/* RECOGNITIONS CSS End  */
+
+/* Membership section start */
+
+.member-section {
+  background-color: #ececec;
+}
+
+/* footer CSS start*/
+
+.footer-container {
+  background-color: #1b1b1b;
+
+  padding-top: 20px;
+
+  color: #ffffff;
+
+  /* margin: 0; */
+}
+
+.footer-container hr {
+  margin: 0;
+}
+
+/* .footer-container,
+a {
+  background-color: #1b1b1b;
+
+  color: #ffffff;
+} */
+
+.footer-container p {
+  text-transform: uppercase;
+}
+
+.footer ul {
+  list-style-type: none;
+
+  padding: 0;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.footer ul li {
+  margin-right: 10px;
+}
+
+.footer ul li:last-child {
+  margin-right: 0;
+}
+
+.footer ul li a {
+  color: #fff;
+
+  text-decoration: none;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-container .child-container:not(:last-child) {
+  border-right: 1px solid rgba(213, 200, 200, 0.25);
+}
+
+.footer-container hr {
+  opacity: 0.25;
+}
+
+.list-unstyled li {
+  border: 1px solid #d3cccc;
+
+  border-radius: 50%;
+
+  padding: 3px 6px;
+
+  font-size: 12px;
+}
+
+.social-media-container {
+  margin: 30px 100px;
+}
+
+/* footer CSS end */
