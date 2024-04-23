@@ -1,67 +1,134 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Header CSS */
-
-/* Style for header */
-.header {
-  background-color: #ffffff;
-  margin: 0 5%;
-  max-width: 1496px;
-}
-
-/* Style for navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Style for logo */
-
-.logo-img {
-  max-width: 100px;
-  height: auto;
-}
-
-/* Style for navbar menu items */
-.navbar ul {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.navbar-menu {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #1b1b1b;
-  text-decoration: none;
-  /* transition: 0.5s ease;  */
-  font-family: 'Courier New', Courier, monospace;
-}
-.navbar-menu:hover {
-  border-bottom: 2px solid #800000;
-  padding-bottom: 30px;
-}
-
-/* Style for contact button */
-header .navbar .btn {
-  background-color: #800000;
-  color: white !important;
-  padding: 10px 20px;
-  border-radius: 0;
-  border-bottom: 0px;
-
-}
-
-header .btn:hover {
-  background-color: #9a3939; /* Set hover background color for button */
-}
-
-.navbar-menu:hover {
-  border-bottom: 2px solid #800000;
-  margin-bottom: 5px;
-}
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+
+/* Header CSS */
+
+
+
+/* Style for header */
+
+.header {
+
+  background-color: #ffffff;
+
+  margin: 0 5%;
+
+  max-width: 1496px;
+
+}
+
+
+
+/* Style for navbar */
+
+.navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+
+
+/* Style for logo */
+
+
+
+.logo-img {
+
+  max-width: 100px;
+
+  height: auto;
+
+}
+
+
+
+/* Style for navbar menu items */
+
+.navbar ul {
+
+  list-style-type: none;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+}
+
+
+
+.navbar-menu {
+
+  text-transform: uppercase;
+
+  font-weight: bold;
+
+  color: #1b1b1b;
+
+  text-decoration: none;
+
+  /* transition: 0.5s ease;  */
+
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.navbar-menu:hover {
+
+  border-bottom: 2px solid #800000;
+
+  padding-bottom: 30px;
+
+}
+
+
+
+/* Style for contact button */
+
+header .navbar .btn {
+
+  background-color: #800000;
+
+  color: white !important;
+
+  padding: 10px 20px;
+
+  border-radius: 0;
+
+  border-bottom: 0px;
+
+
+
+}
+
+
+
+header .btn:hover {
+
+  background-color: #9a3939; /* Set hover background color for button */
+
+}
+
+
+
+.navbar-menu:hover {
+
+  border-bottom: 2px solid #800000;
+
+  margin-bottom: 5px;
+
+}
+
