@@ -929,6 +929,77 @@ h1 {
 }
 /* Publication section CSS end*/
 
+/* Contact now section start */
+
+.contact-section {
+  height: 570px;
+  padding: 50px;
+  background-color: #f8e8da;
+}
+.contact-section .pub-sec-head {
+  color: #1b1b1b;
+}
+.contact-section .pub-pri-head {
+  color: #1b1b1b;
+}
+.contact-section .pub-det {
+  position: relative;
+}
+.contact-section .pub-pri-head::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #1b1b1b;
+  top: 110px;
+  left: 47%;
+}
+.contact-section .dr-img {
+  width: 400px;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.contact-section .dr-img .img-fluid{
+  overflow: hidden;
+}
+.contact-section .form input,
+.contact-section .form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cebdae;
+  margin-top: 8px;
+}
+.contact-section .form input::placeholder,
+.contact-section .form textarea::placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  color: #363636;
+}
+.contact-section .form {
+  margin-top: 50px;
+  padding: 0 40px 30px 50px;
+}
+.contact-section .row .col-md-6:first-child {
+  padding-right: 0;
+}
+.form-btn {
+  background-color: #800000;
+  padding: 5px 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.contact-section .form .row:last-child {
+ text-align: center;
+ margin-top: 10px;
+}
+
+
+/* Contact now section end */
+
 /* footer CSS start*/
 
 .footer-container {
